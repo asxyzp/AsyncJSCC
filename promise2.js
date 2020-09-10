@@ -1,5 +1,5 @@
 /*
-    Understanding promises
+    Understanding promises (2)
     Created by Aashish Loknath Panigrahi
 */
 
