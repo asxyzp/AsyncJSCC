@@ -25,9 +25,9 @@
 
  Promise.all([promise1,promise2])
  .then((values)=>{
-    console.log(`User ID Match ? ${values[0][values[0].length-1]}`);
-    console.log(`Session ID Match ? ${values[1][values[1].length-1]}`);
- })
- .catch((err)=>{
-    console.log(err);
- });
+        console.log(`User ID Match ? ${values[0][values[0].length-1]}`);
+        console.log(`Session ID Match ? ${values[1][values[1].length-1]}`);
+    },
+    (err)=>{
+        console.log(err);
+});
