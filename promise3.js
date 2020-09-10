@@ -6,7 +6,7 @@
 //Handling errors within then
 let promise = new Promise((resolve,reject)=>{
     setTimeout(()=>{
-        if(true){
+        if(false){
             resolve("RESOLVED");
         }
         else{
@@ -23,3 +23,12 @@ promise.then(
         console.log(error);
     }
 );
+
+//Understanding finally
+promise
+.catch((err)=>{
+    console.log(err);
+})
+.finally(()=>{
+        console.log("Yay! Promise has settled.");
+});
